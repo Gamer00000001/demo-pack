@@ -52,7 +52,7 @@ boot_drive: db 0
 
 start:
 mov [boot_drive], dl
-mov si, [msg]
+mov si, msg
 jmp $
 times 510-($-$$) db 0
 dw 0xAA55
